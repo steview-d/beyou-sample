@@ -1,12 +1,39 @@
+// --------------------------------------------------- misc & temp //
+
 .qqq {
     filter: invert(1);
 }
 
-$white: #FFFFFF;
+// ------------------------------------------------------- navbar //
 
-.foo {
+.nav-container {
     background-color: teal;
+
+    max-width: 1237px;
+    height: 2.6rem;
+    margin: 1.8rem auto;
 }
- .ff {
-     color: red;
- }
+
+// ------------------------------------------------- header group //
+
+.header-container {
+    background-color: burlywood;
+    height: 400px;
+}
+
+// --------------------------------------------- product carousel //
+
+.product-carousel-container {
+    background-color: lemonchiffon;
+    margin: 3.75rem auto 6.5rem;
+    height: 375px;
+}
+
+// ------------------------------------------------------------cbd //
+
+.cbd-container {
+    background-color: lightcyan;
+    margin-top: 6.5rem;
+    margin-bottom: 13rem;
+    height: 601px;
+}
