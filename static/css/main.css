@@ -4,6 +4,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -10764,20 +10765,51 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-.qqq {
-  -webkit-filter: invert(1);
-          filter: invert(1);
-}
-
 .nav-container {
-  background-color: teal;
   max-width: 1237px;
   height: 2.6rem;
   margin: 1.8rem auto;
 }
 
+.nav-logo {
+  height: 2.6rem;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.nav-links-container {
+  display: none;
+}
+
+@media (min-width: 1400px) {
+  .nav-links-container {
+    display: block;
+  }
+}
+
+.nav-links {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 22px;
+  color: #5E5E5E;
+  margin: auto;
+}
+
+.nav-links li {
+  font-size: 15px;
+  margin: auto .6rem;
+}
+
+.basket {
+  height: 37px;
+}
+
+.menu {
+  height: 26px;
+  margin-left: 2rem;
+}
+
 .header-container {
-  background-color: burlywood;
+  background-color: #DBD6D0;
   height: 400px;
 }
 

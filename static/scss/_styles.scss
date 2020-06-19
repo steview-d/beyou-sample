@@ -1,23 +1,62 @@
 // --------------------------------------------------- misc & temp //
 
-.qqq {
-    filter: invert(1);
-}
+// -------------------------------------------------- import fonts //
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+// ----------------------------------------------------- variables //
+
 
 // ------------------------------------------------------- navbar //
 
 .nav-container {
-    background-color: teal;
+    // background-color: teal;
 
     max-width: 1237px;
     height: 2.6rem;
     margin: 1.8rem auto;
 }
 
+.nav-logo {
+    height: 2.6rem;
+    filter: invert(1);
+}
+
+.nav-links-container {
+    display: none;
+
+    @media (min-width: 1400px) {
+        display: block;
+    }
+}
+
+.nav-links {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 22px;
+    color: #5E5E5E;
+    margin: auto;
+
+    li {
+        font-size: 15px;
+        margin: auto .6rem;
+    }
+}
+
+.basket {
+    // width: 33px;
+    height: 37px;
+}
+
+.menu {
+    height: 26px;
+    margin-left: 2rem;
+}
+
+
 // ------------------------------------------------- header group //
 
 .header-container {
-    background-color: burlywood;
+    background-color: #DBD6D0;
     height: 400px;
 }
 
