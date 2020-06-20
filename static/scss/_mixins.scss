@@ -1,32 +1,43 @@
 @mixin product-container-mx($bg-col, $shadow-one, $shadow-two) {
     position: relative;
-    width: 400px;
-    height: 340px;
+    width: 270px;
+    height: 230px;
     background-color: $bg-col;
     box-shadow: inset 2px 2px 4px 0 $shadow-one,
         inset -2px -2px 5px 0 $shadow-two;
+
+    @media (min-width: 576px) {
+        width: 400px;
+        height: 340px;
+    }
 }
 
 @mixin product-quote-mx($text-color, $offset) {
     position: absolute;
     // width: 12.2rem;
-    left: 43%;
+    left: 40%;
     top: calc(33% + #{$offset});
     font-family: 'Caveat', cursive;
     font-weight: 700;
-    font-size: 2.125rem;
-    line-height: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
     color: $text-color;
+
+    @media (min-width: 576px) {
+        left: 43%;
+        font-size: 2.125rem;
+        line-height: 2rem;
+    }
 }
 
 @mixin product-button-mx($bg-col) {
     position: absolute;
-    left: 43%;
-    bottom: 50px;
+    left: 40%;
+    bottom: 23px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 1.35rem;
-    line-height: 1.35rem;
+    font-size: 1rem;
+    line-height: 1.1rem;
     letter-spacing: 1px;
     text-decoration: none;
     padding: 6px 12px 9px;
@@ -37,18 +48,27 @@
     box-shadow: -2px -2px 4px 0 rgba(255, 255, 255, 0.5),
         2px 2px 4px 0 rgba(0, 0, 0, 0.21);
 
-    @media (min-width: 768px) {
+    @media (min-width: 576px) {
+        left: 43%;
+        bottom: 50px;
+        font-size: 1.35rem;
+        line-height: 1.35rem;
         padding: 0.9rem 1.1rem 0.9rem;
     }
+
 }
 
 @mixin quote-image-mx($width, $height) {
     position: absolute;
-    left: 43%;
+    left: 40%;
     top: 17%;
-    
+
     img {
         width: $width;
         height: $height;
+    }
+
+    @media (min-width: 576px) {
+        left: 43%;
     }
 }

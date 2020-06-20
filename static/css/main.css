@@ -10938,42 +10938,63 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 3.75rem auto 6.5rem;
   height: 375px;
-  overflow: hidden;
+}
+
+@media (min-width: 1320px) {
+  .product-carousel-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .c-product-hand {
   position: relative;
-  width: 400px;
-  height: 340px;
+  width: 270px;
+  height: 230px;
   background-color: #3ad6b8;
   -webkit-box-shadow: inset 2px 2px 4px 0 #00856b, inset -2px -2px 5px 0 #b7fff1;
           box-shadow: inset 2px 2px 4px 0 #00856b, inset -2px -2px 5px 0 #b7fff1;
 }
 
+@media (min-width: 576px) {
+  .c-product-hand {
+    width: 400px;
+    height: 340px;
+  }
+}
+
 .c-product-hand .product-quote {
   position: absolute;
-  left: 43%;
+  left: 40%;
   top: calc(33% + 0.1rem);
   font-family: 'Caveat', cursive;
   font-weight: 700;
-  font-size: 2.125rem;
-  line-height: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   color: #075f4e;
+}
+
+@media (min-width: 576px) {
+  .c-product-hand .product-quote {
+    left: 43%;
+    font-size: 2.125rem;
+    line-height: 2rem;
+  }
 }
 
 .c-product-hand .product-button {
   position: absolute;
-  left: 43%;
-  bottom: 50px;
+  left: 40%;
+  bottom: 23px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 1.35rem;
-  line-height: 1.35rem;
+  font-size: 1rem;
+  line-height: 1.1rem;
   letter-spacing: 1px;
   text-decoration: none;
   padding: 6px 12px 9px;
@@ -10985,15 +11006,19 @@ a:hover {
           box-shadow: -2px -2px 4px 0 rgba(255, 255, 255, 0.5), 2px 2px 4px 0 rgba(0, 0, 0, 0.21);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .c-product-hand .product-button {
+    left: 43%;
+    bottom: 50px;
+    font-size: 1.35rem;
+    line-height: 1.35rem;
     padding: 0.9rem 1.1rem 0.9rem;
   }
 }
 
 .c-product-hand .quote-image {
   position: absolute;
-  left: 43%;
+  left: 40%;
   top: 17%;
 }
 
@@ -11002,34 +11027,55 @@ a:hover {
   height: 41px;
 }
 
+@media (min-width: 576px) {
+  .c-product-hand .quote-image {
+    left: 43%;
+  }
+}
+
 .c-product-cream {
   position: relative;
-  width: 400px;
-  height: 340px;
+  width: 270px;
+  height: 230px;
   background-color: #ffcb3e;
   -webkit-box-shadow: inset 2px 2px 4px 0 #a37e1d, inset -2px -2px 5px 0 #ffe49a;
           box-shadow: inset 2px 2px 4px 0 #a37e1d, inset -2px -2px 5px 0 #ffe49a;
 }
 
+@media (min-width: 576px) {
+  .c-product-cream {
+    width: 400px;
+    height: 340px;
+  }
+}
+
 .c-product-cream .product-quote {
   position: absolute;
-  left: 43%;
+  left: 40%;
   top: calc(33% + 0.3rem);
   font-family: 'Caveat', cursive;
   font-weight: 700;
-  font-size: 2.125rem;
-  line-height: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   color: #6e5100;
+}
+
+@media (min-width: 576px) {
+  .c-product-cream .product-quote {
+    left: 43%;
+    font-size: 2.125rem;
+    line-height: 2rem;
+  }
 }
 
 .c-product-cream .product-button {
   position: absolute;
-  left: 43%;
-  bottom: 50px;
+  left: 40%;
+  bottom: 23px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 1.35rem;
-  line-height: 1.35rem;
+  font-size: 1rem;
+  line-height: 1.1rem;
   letter-spacing: 1px;
   text-decoration: none;
   padding: 6px 12px 9px;
@@ -11041,51 +11087,94 @@ a:hover {
           box-shadow: -2px -2px 4px 0 rgba(255, 255, 255, 0.5), 2px 2px 4px 0 rgba(0, 0, 0, 0.21);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .c-product-cream .product-button {
+    left: 43%;
+    bottom: 50px;
+    font-size: 1.35rem;
+    line-height: 1.35rem;
     padding: 0.9rem 1.1rem 0.9rem;
   }
 }
 
 .c-product-cream .quote-image {
   position: absolute;
-  left: 43%;
+  left: 40%;
   top: 17%;
 }
 
 .c-product-cream .quote-image img {
-  width: 148px;
-  height: 46px;
+  width: 100px;
+  height: 32px;
+}
+
+@media (min-width: 576px) {
+  .c-product-cream .quote-image {
+    left: 43%;
+  }
+}
+
+@media (min-width: 576px) {
+  .c-product-cream .quote-image {
+    position: absolute;
+    left: 40%;
+    top: 17%;
+  }
+  .c-product-cream .quote-image img {
+    width: 148px;
+    height: 46px;
+  }
+}
+
+@media (min-width: 576px) and (min-width: 576px) {
+  .c-product-cream .quote-image {
+    left: 43%;
+  }
 }
 
 .c-product-cup {
   position: relative;
-  width: 400px;
-  height: 340px;
+  width: 270px;
+  height: 230px;
   background-color: #1db0e0;
   -webkit-box-shadow: inset 2px 2px 4px 0 #00838e, inset -2px -2px 5px 0 #1de0f1;
           box-shadow: inset 2px 2px 4px 0 #00838e, inset -2px -2px 5px 0 #1de0f1;
 }
 
+@media (min-width: 576px) {
+  .c-product-cup {
+    width: 400px;
+    height: 340px;
+  }
+}
+
 .c-product-cup .product-quote {
   position: absolute;
-  left: 43%;
+  left: 40%;
   top: calc(33% + 1.25rem);
   font-family: 'Caveat', cursive;
   font-weight: 700;
-  font-size: 2.125rem;
-  line-height: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   color: #0d6784;
+}
+
+@media (min-width: 576px) {
+  .c-product-cup .product-quote {
+    left: 43%;
+    font-size: 2.125rem;
+    line-height: 2rem;
+  }
 }
 
 .c-product-cup .product-button {
   position: absolute;
-  left: 43%;
-  bottom: 50px;
+  left: 40%;
+  bottom: 23px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 1.35rem;
-  line-height: 1.35rem;
+  font-size: 1rem;
+  line-height: 1.1rem;
   letter-spacing: 1px;
   text-decoration: none;
   padding: 6px 12px 9px;
@@ -11097,15 +11186,19 @@ a:hover {
           box-shadow: -2px -2px 4px 0 rgba(255, 255, 255, 0.5), 2px 2px 4px 0 rgba(0, 0, 0, 0.21);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .c-product-cup .product-button {
+    left: 43%;
+    bottom: 50px;
+    font-size: 1.35rem;
+    line-height: 1.35rem;
     padding: 0.9rem 1.1rem 0.9rem;
   }
 }
 
 .c-product-cup .quote-image {
   position: absolute;
-  left: 43%;
+  left: 40%;
   top: 17%;
 }
 
@@ -11114,11 +11207,24 @@ a:hover {
   height: 50px;
 }
 
+@media (min-width: 576px) {
+  .c-product-cup .quote-image {
+    left: 43%;
+  }
+}
+
 .product-image {
   position: absolute;
-  top: 12px;
-  width: 170px;
-  height: 350px;
+  width: 110px;
+  height: 251px;
+}
+
+@media (min-width: 576px) {
+  .product-image {
+    width: 170px;
+    height: 350px;
+    top: 12px;
+  }
 }
 
 .cbd-container {
@@ -11141,11 +11247,5 @@ a:hover {
   border: 0;
   -webkit-box-shadow: -2px -2px 4px 0 rgba(255, 255, 255, 0.5), 2px 2px 4px 0 rgba(0, 0, 0, 0.21);
           box-shadow: -2px -2px 4px 0 rgba(255, 255, 255, 0.5), 2px 2px 4px 0 rgba(0, 0, 0, 0.21);
-}
-
-@media (min-width: 768px) {
-  .shop-button {
-    padding: 8px 17px 13px;
-  }
 }
 /*# sourceMappingURL=main.css.map */

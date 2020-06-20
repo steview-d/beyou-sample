@@ -159,10 +159,13 @@ a {
 
 .product-carousel-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 3.75rem auto 6.5rem;
     height: 375px;
-    overflow: hidden;
+
+    @media (min-width: 1320px) {
+        justify-content: space-between;
+    }
 }
 
 .c-product-hand {
@@ -193,7 +196,11 @@ a {
     }
 
     .quote-image {
-        @include quote-image-mx(148px, 46px);
+        @include quote-image-mx(100px, 32px);
+
+        @media (min-width: 576px) {
+            @include quote-image-mx(148px, 46px);
+        }
     }
 }
 
@@ -215,9 +222,14 @@ a {
 
 .product-image {
     position: absolute;
-    top: 12px;
-    width: 170px;
-    height: 350px;
+    width: 110px;
+    height: 251px;
+
+    @media (min-width: 576px) {
+        width: 170px;
+        height: 350px;
+        top: 12px;
+    }
 }
 
 // ------------------------------------------------------------cbd //
@@ -245,8 +257,4 @@ a {
     box-shadow: -2px -2px 4px 0 rgba(255, 255, 255, 0.5),
         2px 2px 4px 0 rgba(0, 0, 0, 0.21);
 
-    @media (min-width: 768px) {
-        // line-height: 1.5rem;
-        padding: 8px 17px 13px;
-    }
 }
