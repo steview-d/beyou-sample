@@ -10935,6 +10935,7 @@ a:hover {
 }
 
 .product-carousel-container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11229,6 +11230,27 @@ a:hover {
   }
 }
 
+.slider {
+  position: absolute;
+  right: 10px;
+  bottom: -46px;
+}
+
+.slider .dot {
+  height: 17px;
+  width: 17px;
+  margin: 0.4rem;
+  background-color: #ededed;
+  border: 1px solid #d8d8d8;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.slider .dot-active {
+  background-color: #ffcb3e;
+  border-color: #ffcb3e;
+}
+
 .sleep-mist-container {
   background: #e97f9f url("/static/images/byv3_sleep_feature_a_800x.jpg") no-repeat;
   background-position: right top;
@@ -11258,7 +11280,7 @@ a:hover {
   font-size: 2rem;
   line-height: 2.2rem;
   color: #ffffff;
-  margin: .8rem 0 2.2rem;
+  margin: 0.8rem 0 2.2rem;
 }
 
 .sleep-mist-container .sleep-mist-content .sleep-mist-button {

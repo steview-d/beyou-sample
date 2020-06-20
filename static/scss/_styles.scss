@@ -158,6 +158,7 @@ a {
 // --------------------------------------------- product carousel //
 
 .product-carousel-container {
+    position: relative;
     display: flex;
     justify-content: space-around;
     margin: 3.75rem auto 6.5rem;
@@ -234,6 +235,27 @@ a {
     }
 }
 
+.slider {
+    position: absolute;
+    right: 10px;
+    bottom: -46px;
+
+    .dot {
+        height: 17px;
+        width: 17px;
+        margin: 0.4rem;
+        background-color: #ededed;
+        border: 1px solid #d8d8d8;
+        border-radius: 50%;
+        display: inline-block;
+
+        &-active {
+            background-color: #ffcb3e;
+            border-color: #ffcb3e;
+        }
+    }
+}
+
 // ---------------------------------------------------- sleep mist //
 
 .sleep-mist-container {
@@ -262,9 +284,9 @@ a {
             font-size: 2rem;
             line-height: 2.2rem;
             color: #ffffff;
-            margin: .8rem 0 2.2rem;
+            margin: 0.8rem 0 2.2rem;
         }
-        
+
         .sleep-mist-button {
             font-family: 'Raleway', sans-serif;
             font-weight: 700;
