@@ -21,7 +21,9 @@ a {
 
 // -------------------------------------------------- import fonts //
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@800&family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;800&family=Caveat:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 
 // ----------------------------------------------------- variables //
 
@@ -132,7 +134,6 @@ a {
         line-height: 2.625rem;
         font-weight: 700;
         color: #ffffff;
-        // margin-top: 5.625rem;
 
         @media (min-width: 768px) {
             font-size: 5rem;
@@ -157,9 +158,65 @@ a {
 // --------------------------------------------- product carousel //
 
 .product-carousel-container {
-    background-color: lemonchiffon;
+    display: flex;
+    justify-content: space-between;
     margin: 3.75rem auto 6.5rem;
     height: 375px;
+}
+
+.c-product-hand {
+    @include product-container-mx(#3ad6b8, #00856b, #b7fff1);
+
+    .product-quote {
+        @include product-quote-mx(#075f4e, .1rem);
+    }
+
+    .product-button {
+        @include product-button-mx(#3ad6b8);
+    }
+
+    .quote-image {
+        @include quote-image-mx(168px, 41px);
+    }
+}
+
+.c-product-cream {
+    @include product-container-mx(#ffcb3e, #a37e1d, #ffe49a);
+
+    .product-quote {
+        @include product-quote-mx(#6e5100, .3rem);
+    }
+
+    .product-button {
+        @include product-button-mx(#ffcb3e);
+    }
+
+    .quote-image {
+        @include quote-image-mx(148px, 46px);
+    }
+}
+
+.c-product-cup {
+    @include product-container-mx(#1db0e0, #00838e, #1de0f1);
+
+    .product-quote {
+        @include product-quote-mx(#0d6784, 1.25rem);
+    }
+
+    .product-button {
+        @include product-button-mx(#1db0e0);
+    }
+
+    .quote-image {
+        @include quote-image-mx(185px, 50px);
+    }
+}
+
+.product-image {
+    position: absolute;
+    top: 12px;
+    width: 170px;
+    height: 350px;
 }
 
 // ------------------------------------------------------------cbd //

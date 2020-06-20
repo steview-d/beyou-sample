@@ -4,7 +4,8 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@800&family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;800&family=Caveat:wght@700&family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -10934,9 +10935,192 @@ a:hover {
 }
 
 .product-carousel-container {
-  background-color: lemonchiffon;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 3.75rem auto 6.5rem;
   height: 375px;
+}
+
+.c-product-hand {
+  position: relative;
+  width: 400px;
+  height: 340px;
+  background-color: #3ad6b8;
+  -webkit-box-shadow: inset 2px 2px 4px 0 #00856b, inset -2px -2px 5px 0 #b7fff1;
+          box-shadow: inset 2px 2px 4px 0 #00856b, inset -2px -2px 5px 0 #b7fff1;
+}
+
+.c-product-hand .product-quote {
+  position: absolute;
+  width: 12.2rem;
+  left: 43%;
+  top: calc(33% + 0.1rem);
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+  font-size: 2.125rem;
+  line-height: 2rem;
+  color: #075f4e;
+}
+
+.c-product-hand .product-button {
+  position: absolute;
+  left: 43%;
+  bottom: 50px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 1.35rem;
+  line-height: 1.35rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 6px 12px 9px;
+  color: #ffffff;
+  background-color: #3ad6b8;
+  border-radius: 5px;
+  border: 0;
+  -webkit-box-shadow: -2px -2px 4px 0 rgba(255, 255, 255, 0.5), 2px 2px 4px 0 rgba(0, 0, 0, 0.21);
+          box-shadow: -2px -2px 4px 0 rgba(255, 255, 255, 0.5), 2px 2px 4px 0 rgba(0, 0, 0, 0.21);
+}
+
+@media (min-width: 768px) {
+  .c-product-hand .product-button {
+    padding: 0.9rem 1.1rem 0.9rem;
+  }
+}
+
+.c-product-hand .quote-image {
+  position: absolute;
+  left: 43%;
+  top: 17%;
+}
+
+.c-product-hand .quote-image img {
+  width: 168px;
+  height: 41px;
+}
+
+.c-product-cream {
+  position: relative;
+  width: 400px;
+  height: 340px;
+  background-color: #ffcb3e;
+  -webkit-box-shadow: inset 2px 2px 4px 0 #a37e1d, inset -2px -2px 5px 0 #ffe49a;
+          box-shadow: inset 2px 2px 4px 0 #a37e1d, inset -2px -2px 5px 0 #ffe49a;
+}
+
+.c-product-cream .product-quote {
+  position: absolute;
+  width: 12.2rem;
+  left: 43%;
+  top: calc(33% + 0.3rem);
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+  font-size: 2.125rem;
+  line-height: 2rem;
+  color: #6e5100;
+}
+
+.c-product-cream .product-button {
+  position: absolute;
+  left: 43%;
+  bottom: 50px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 1.35rem;
+  line-height: 1.35rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 6px 12px 9px;
+  color: #ffffff;
+  background-color: #ffcb3e;
+  border-radius: 5px;
+  border: 0;
+  -webkit-box-shadow: -2px -2px 4px 0 rgba(255, 255, 255, 0.5), 2px 2px 4px 0 rgba(0, 0, 0, 0.21);
+          box-shadow: -2px -2px 4px 0 rgba(255, 255, 255, 0.5), 2px 2px 4px 0 rgba(0, 0, 0, 0.21);
+}
+
+@media (min-width: 768px) {
+  .c-product-cream .product-button {
+    padding: 0.9rem 1.1rem 0.9rem;
+  }
+}
+
+.c-product-cream .quote-image {
+  position: absolute;
+  left: 43%;
+  top: 17%;
+}
+
+.c-product-cream .quote-image img {
+  width: 148px;
+  height: 46px;
+}
+
+.c-product-cup {
+  position: relative;
+  width: 400px;
+  height: 340px;
+  background-color: #1db0e0;
+  -webkit-box-shadow: inset 2px 2px 4px 0 #00838e, inset -2px -2px 5px 0 #1de0f1;
+          box-shadow: inset 2px 2px 4px 0 #00838e, inset -2px -2px 5px 0 #1de0f1;
+}
+
+.c-product-cup .product-quote {
+  position: absolute;
+  width: 12.2rem;
+  left: 43%;
+  top: calc(33% + 1.25rem);
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+  font-size: 2.125rem;
+  line-height: 2rem;
+  color: #0d6784;
+}
+
+.c-product-cup .product-button {
+  position: absolute;
+  left: 43%;
+  bottom: 50px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 1.35rem;
+  line-height: 1.35rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 6px 12px 9px;
+  color: #ffffff;
+  background-color: #1db0e0;
+  border-radius: 5px;
+  border: 0;
+  -webkit-box-shadow: -2px -2px 4px 0 rgba(255, 255, 255, 0.5), 2px 2px 4px 0 rgba(0, 0, 0, 0.21);
+          box-shadow: -2px -2px 4px 0 rgba(255, 255, 255, 0.5), 2px 2px 4px 0 rgba(0, 0, 0, 0.21);
+}
+
+@media (min-width: 768px) {
+  .c-product-cup .product-button {
+    padding: 0.9rem 1.1rem 0.9rem;
+  }
+}
+
+.c-product-cup .quote-image {
+  position: absolute;
+  left: 43%;
+  top: 17%;
+}
+
+.c-product-cup .quote-image img {
+  width: 185px;
+  height: 50px;
+}
+
+.product-image {
+  position: absolute;
+  top: 12px;
+  width: 170px;
+  height: 350px;
 }
 
 .cbd-container {
