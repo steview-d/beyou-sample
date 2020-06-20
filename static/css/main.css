@@ -10943,6 +10943,7 @@ a:hover {
           justify-content: space-between;
   margin: 3.75rem auto 6.5rem;
   height: 375px;
+  overflow: hidden;
 }
 
 .c-product-hand {
@@ -10956,7 +10957,6 @@ a:hover {
 
 .c-product-hand .product-quote {
   position: absolute;
-  width: 12.2rem;
   left: 43%;
   top: calc(33% + 0.1rem);
   font-family: 'Caveat', cursive;
@@ -11013,7 +11013,6 @@ a:hover {
 
 .c-product-cream .product-quote {
   position: absolute;
-  width: 12.2rem;
   left: 43%;
   top: calc(33% + 0.3rem);
   font-family: 'Caveat', cursive;
@@ -11070,7 +11069,6 @@ a:hover {
 
 .c-product-cup .product-quote {
   position: absolute;
-  width: 12.2rem;
   left: 43%;
   top: calc(33% + 1.25rem);
   font-family: 'Caveat', cursive;

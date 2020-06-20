@@ -9,7 +9,7 @@
 
 @mixin product-quote-mx($text-color, $offset) {
     position: absolute;
-    width: 12.2rem;
+    // width: 12.2rem;
     left: 43%;
     top: calc(33% + #{$offset});
     font-family: 'Caveat', cursive;

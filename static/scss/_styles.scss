@@ -162,13 +162,14 @@ a {
     justify-content: space-between;
     margin: 3.75rem auto 6.5rem;
     height: 375px;
+    overflow: hidden;
 }
 
 .c-product-hand {
     @include product-container-mx(#3ad6b8, #00856b, #b7fff1);
 
     .product-quote {
-        @include product-quote-mx(#075f4e, .1rem);
+        @include product-quote-mx(#075f4e, 0.1rem);
     }
 
     .product-button {
@@ -184,7 +185,7 @@ a {
     @include product-container-mx(#ffcb3e, #a37e1d, #ffe49a);
 
     .product-quote {
-        @include product-quote-mx(#6e5100, .3rem);
+        @include product-quote-mx(#6e5100, 0.3rem);
     }
 
     .product-button {
