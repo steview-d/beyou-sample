@@ -14,8 +14,7 @@
 
 @mixin product-quote-mx($text-color, $offset) {
     position: absolute;
-    // width: 12.2rem;
-    left: 40%;
+    left: 34%;
     top: calc(33% + #{$offset});
     font-family: 'Caveat', cursive;
     font-weight: 700;
@@ -32,7 +31,7 @@
 
 @mixin product-button-mx($bg-col) {
     position: absolute;
-    left: 40%;
+    left: 34%;
     bottom: 23px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -40,7 +39,8 @@
     line-height: 1.1rem;
     letter-spacing: 1px;
     text-decoration: none;
-    padding: 6px 12px 9px;
+    padding: 0.9rem .9rem 0.9rem;
+
     color: #ffffff;
     background-color: $bg-col;
     border-radius: 5px;
@@ -60,7 +60,7 @@
 
 @mixin quote-image-mx($width, $height) {
     position: absolute;
-    left: 40%;
+    left: 34%;
     top: 17%;
 
     img {

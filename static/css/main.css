@@ -10970,7 +10970,7 @@ a:hover {
 
 .c-product-hand .product-quote {
   position: absolute;
-  left: 40%;
+  left: 34%;
   top: calc(33% + 0.1rem);
   font-family: 'Caveat', cursive;
   font-weight: 700;
@@ -10989,7 +10989,7 @@ a:hover {
 
 .c-product-hand .product-button {
   position: absolute;
-  left: 40%;
+  left: 34%;
   bottom: 23px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -10997,7 +10997,7 @@ a:hover {
   line-height: 1.1rem;
   letter-spacing: 1px;
   text-decoration: none;
-  padding: 6px 12px 9px;
+  padding: 0.9rem .9rem 0.9rem;
   color: #ffffff;
   background-color: #3ad6b8;
   border-radius: 5px;
@@ -11018,7 +11018,7 @@ a:hover {
 
 .c-product-hand .quote-image {
   position: absolute;
-  left: 40%;
+  left: 34%;
   top: 17%;
 }
 
@@ -11051,7 +11051,7 @@ a:hover {
 
 .c-product-cream .product-quote {
   position: absolute;
-  left: 40%;
+  left: 34%;
   top: calc(33% + 0.3rem);
   font-family: 'Caveat', cursive;
   font-weight: 700;
@@ -11070,7 +11070,7 @@ a:hover {
 
 .c-product-cream .product-button {
   position: absolute;
-  left: 40%;
+  left: 34%;
   bottom: 23px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -11078,7 +11078,7 @@ a:hover {
   line-height: 1.1rem;
   letter-spacing: 1px;
   text-decoration: none;
-  padding: 6px 12px 9px;
+  padding: 0.9rem .9rem 0.9rem;
   color: #ffffff;
   background-color: #ffcb3e;
   border-radius: 5px;
@@ -11099,7 +11099,7 @@ a:hover {
 
 .c-product-cream .quote-image {
   position: absolute;
-  left: 40%;
+  left: 34%;
   top: 17%;
 }
 
@@ -11117,7 +11117,7 @@ a:hover {
 @media (min-width: 576px) {
   .c-product-cream .quote-image {
     position: absolute;
-    left: 40%;
+    left: 34%;
     top: 17%;
   }
   .c-product-cream .quote-image img {
@@ -11150,7 +11150,7 @@ a:hover {
 
 .c-product-cup .product-quote {
   position: absolute;
-  left: 40%;
+  left: 34%;
   top: calc(33% + 1.25rem);
   font-family: 'Caveat', cursive;
   font-weight: 700;
@@ -11169,7 +11169,7 @@ a:hover {
 
 .c-product-cup .product-button {
   position: absolute;
-  left: 40%;
+  left: 34%;
   bottom: 23px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -11177,7 +11177,7 @@ a:hover {
   line-height: 1.1rem;
   letter-spacing: 1px;
   text-decoration: none;
-  padding: 6px 12px 9px;
+  padding: 0.9rem .9rem 0.9rem;
   color: #ffffff;
   background-color: #1db0e0;
   border-radius: 5px;
@@ -11198,7 +11198,7 @@ a:hover {
 
 .c-product-cup .quote-image {
   position: absolute;
-  left: 40%;
+  left: 34%;
   top: 17%;
 }
 
@@ -11217,6 +11217,7 @@ a:hover {
   position: absolute;
   width: 110px;
   height: 251px;
+  left: -5px;
 }
 
 @media (min-width: 576px) {
@@ -11224,7 +11225,56 @@ a:hover {
     width: 170px;
     height: 350px;
     top: 12px;
+    left: 0;
   }
+}
+
+.sleep-mist-container {
+  background: #e97f9f url("/static/images/byv3_sleep_feature_a_800x.jpg") no-repeat;
+  background-position: right top;
+  background-size: cover;
+  height: 450px;
+}
+
+.sleep-mist-container .sleep-mist-content {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  bottom: 0;
+  height: 100%;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sleep-mist-container .sleep-mist-content img {
+  height: 170px;
+}
+
+.sleep-mist-container .sleep-mist-content h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.2rem;
+  color: #ffffff;
+  margin: .8rem 0 2.2rem;
+}
+
+.sleep-mist-container .sleep-mist-content .sleep-mist-button {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 0.9rem 0.9rem 0.9rem;
+  color: #ffffff;
+  background-color: #e97f9f;
+  border-radius: 5px;
+  border: 0;
+  -webkit-box-shadow: -2px -2px 4px 0 rgba(255, 255, 255, 0.5), 2px 2px 4px 0 rgba(0, 0, 0, 0.21);
+          box-shadow: -2px -2px 4px 0 rgba(255, 255, 255, 0.5), 2px 2px 4px 0 rgba(0, 0, 0, 0.21);
 }
 
 .cbd-container {
