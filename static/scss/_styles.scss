@@ -1,4 +1,9 @@
-// --------------------------------------------------- misc & temp //
+// --------------------------------------------------------- setup //
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
 
 a {
     color: #ffffff;
@@ -7,6 +12,10 @@ a {
         text-decoration: none;
         color: #ffffff;
     }
+}
+
+.v-center {
+    margin: auto 1rem;
 }
 
 // -------------------------------------------------- import fonts //
@@ -26,8 +35,12 @@ a {
 }
 
 .nav-logo {
-    height: 2.6rem;
+    height: 1.875rem;
     filter: invert(1);
+
+    @media (min-width: 768px) {
+        height: 2.6rem;
+    }
 }
 
 .nav-links-container {
@@ -49,7 +62,7 @@ a {
             line-height: 22px;
             color: #5e5e5e;
             font-size: 15px;
-            margin: 0 .7rem;
+            margin: 0 0.7rem;
             transition: 0.2s;
 
             &:hover {
@@ -73,15 +86,27 @@ a {
     & > * {
         margin: auto;
     }
-}
 
-.basket {
-    height: 2.32rem;
-}
+    .basket {
+        height: 1.5rem;
 
-.menu {
-    height: 1.625rem;
-    margin-left: 2rem;
+        @media (min-width: 768px) {
+            height: 2.32rem;
+        }
+    }
+
+    .menu {
+        height: 1.125rem;
+        margin-left: 1.2rem;
+        margin-right: 1rem;
+
+        @media (min-width: 768px) {
+            height: 1.625rem;
+            margin-left: 2rem;
+            margin-right: 0;
+
+        }
+    }
 }
 
 // ------------------------------------------------- header group //
@@ -91,21 +116,19 @@ a {
         no-repeat center;
     background-size: auto 400px;
     height: 400px;
-    box-shadow: 0px 3px 6px -1px rgba(140,140,140,1);
+    box-shadow: 0px 3px 6px -1px rgba(140, 140, 140, 1);
 
     h1 {
         font-family: 'Barlow', sans-serif;
-        font-size: 80px;
+        font-size: 5rem;
         font-weight: 700;
         color: #ffffff;
         margin-top: 5.625rem;
     }
 
     h4 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 500;
         font-size: 1.5rem;
-        line-height: 32px;
+        line-height: 2rem;
         color: #676767;
         margin: -0.7rem 0 2.2rem;
     }
@@ -132,15 +155,15 @@ a {
 
 .shop-button {
     font-family: 'Barlow', sans-serif;
-    text-decoration: none;
     font-size: 24px;
     line-height: 24px;
-    padding: 8px 17px 12px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 8px 17px 13px;
+    color: #ffffff;
+    background-color: #dbd6d0;
     border-radius: 5px;
     border: 0;
     box-shadow: -2px -2px 4px 0 rgba(255, 255, 255, 0.5),
         2px 2px 4px 0 rgba(0, 0, 0, 0.21);
-    letter-spacing: 1px;
-    color: #ffffff;
-    background-color: #dbd6d0;
 }

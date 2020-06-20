@@ -10765,6 +10765,11 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
 a {
   color: #ffffff;
 }
@@ -10772,6 +10777,10 @@ a {
 a:hover {
   text-decoration: none;
   color: #ffffff;
+}
+
+.v-center {
+  margin: auto 1rem;
 }
 
 .nav-container {
@@ -10787,9 +10796,15 @@ a:hover {
 }
 
 .nav-logo {
-  height: 2.6rem;
+  height: 1.875rem;
   -webkit-filter: invert(1);
           filter: invert(1);
+}
+
+@media (min-width: 768px) {
+  .nav-logo {
+    height: 2.6rem;
+  }
 }
 
 .nav-links-container {
@@ -10820,7 +10835,7 @@ a:hover {
   line-height: 22px;
   color: #5e5e5e;
   font-size: 15px;
-  margin: 0 .7rem;
+  margin: 0 0.7rem;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -10847,13 +10862,28 @@ a:hover {
   margin: auto;
 }
 
-.basket {
-  height: 2.32rem;
+.nav-icons .basket {
+  height: 1.5rem;
 }
 
-.menu {
-  height: 1.625rem;
-  margin-left: 2rem;
+@media (min-width: 768px) {
+  .nav-icons .basket {
+    height: 2.32rem;
+  }
+}
+
+.nav-icons .menu {
+  height: 1.125rem;
+  margin-left: 1.2rem;
+  margin-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .nav-icons .menu {
+    height: 1.625rem;
+    margin-left: 2rem;
+    margin-right: 0;
+  }
 }
 
 .header-container {
@@ -10866,17 +10896,15 @@ a:hover {
 
 .header-container h1 {
   font-family: 'Barlow', sans-serif;
-  font-size: 80px;
+  font-size: 5rem;
   font-weight: 700;
   color: #ffffff;
   margin-top: 5.625rem;
 }
 
 .header-container h4 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
   font-size: 1.5rem;
-  line-height: 32px;
+  line-height: 2rem;
   color: #676767;
   margin: -0.7rem 0 2.2rem;
 }
@@ -10896,16 +10924,16 @@ a:hover {
 
 .shop-button {
   font-family: 'Barlow', sans-serif;
-  text-decoration: none;
   font-size: 24px;
   line-height: 24px;
-  padding: 8px 17px 12px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 8px 17px 13px;
+  color: #ffffff;
+  background-color: #dbd6d0;
   border-radius: 5px;
   border: 0;
   -webkit-box-shadow: -2px -2px 4px 0 rgba(255, 255, 255, 0.5), 2px 2px 4px 0 rgba(0, 0, 0, 0.21);
           box-shadow: -2px -2px 4px 0 rgba(255, 255, 255, 0.5), 2px 2px 4px 0 rgba(0, 0, 0, 0.21);
-  letter-spacing: 1px;
-  color: #ffffff;
-  background-color: #dbd6d0;
 }
 /*# sourceMappingURL=main.css.map */
