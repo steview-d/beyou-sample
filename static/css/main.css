@@ -10780,7 +10780,8 @@ a:hover {
 }
 
 .v-center {
-  margin: auto 1rem;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .nav-container {
@@ -10887,26 +10888,49 @@ a:hover {
 }
 
 .header-container {
-  background: #dbd6d0 url("/static/images/byv3-header-group-desktop_a.jpg") no-repeat center;
-  background-size: auto 400px;
-  height: 400px;
+  background: #dbd6d0 url("/static/images/byv3-header-group-mobile_a.jpg") no-repeat;
+  background-size: auto 250px;
+  height: 250px;
   -webkit-box-shadow: 0px 3px 6px -1px #8c8c8c;
           box-shadow: 0px 3px 6px -1px #8c8c8c;
 }
 
+@media (min-width: 768px) {
+  .header-container {
+    background: #dbd6d0 url("/static/images/byv3-header-group-desktop_a.jpg") no-repeat center;
+    background-size: auto 400px;
+    height: 400px;
+  }
+}
+
 .header-container h1 {
   font-family: 'Barlow', sans-serif;
-  font-size: 5rem;
+  font-size: 2.875rem;
+  line-height: 2.625rem;
   font-weight: 700;
   color: #ffffff;
-  margin-top: 5.625rem;
+}
+
+@media (min-width: 768px) {
+  .header-container h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
 }
 
 .header-container h4 {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 0.94rem;
+  line-height: 1.2rem;
   color: #676767;
-  margin: -0.7rem 0 2.2rem;
+  margin: 0.5rem 0 1.6rem;
+}
+
+@media (min-width: 768px) {
+  .header-container h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 0.5rem 0 2.2rem;
+  }
 }
 
 .product-carousel-container {
@@ -10925,15 +10949,21 @@ a:hover {
 .shop-button {
   font-family: 'Barlow', sans-serif;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 1.25rem;
   letter-spacing: 1px;
   text-decoration: none;
-  padding: 8px 17px 13px;
+  padding: 6px 14px 9px;
   color: #ffffff;
   background-color: #dbd6d0;
   border-radius: 5px;
   border: 0;
   -webkit-box-shadow: -2px -2px 4px 0 rgba(255, 255, 255, 0.5), 2px 2px 4px 0 rgba(0, 0, 0, 0.21);
           box-shadow: -2px -2px 4px 0 rgba(255, 255, 255, 0.5), 2px 2px 4px 0 rgba(0, 0, 0, 0.21);
+}
+
+@media (min-width: 768px) {
+  .shop-button {
+    padding: 8px 17px 13px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
