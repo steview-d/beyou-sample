@@ -10888,7 +10888,7 @@ a:hover {
 }
 
 .header-container {
-  background: #dbd6d0 url("/static/images/byv3-header-group-mobile_a.jpg") no-repeat;
+  background: #dbd6d0 url("../images/byv3-header-group-mobile_a.jpg") no-repeat;
   background-size: auto 250px;
   height: 250px;
   -webkit-box-shadow: 0px 3px 6px -1px #8c8c8c;
@@ -10897,7 +10897,7 @@ a:hover {
 
 @media (min-width: 768px) {
   .header-container {
-    background: #dbd6d0 url("/static/images/byv3-header-group-desktop_a.jpg") no-repeat center;
+    background: #dbd6d0 url("../images/byv3-header-group-desktop_a.jpg") no-repeat center;
     background-size: auto 400px;
     height: 400px;
   }

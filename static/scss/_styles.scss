@@ -111,7 +111,7 @@ a {
 // ------------------------------------------------- header group //
 
 .header-container {
-    background: $header-bg url('/static/images/byv3-header-group-mobile_a.jpg')
+    background: $header-bg url('../images/byv3-header-group-mobile_a.jpg')
         no-repeat;
     background-size: auto 250px;
     height: 250px;
@@ -119,7 +119,7 @@ a {
 
     @media (min-width: 768px) {
         background: $header-bg
-            url('/static/images/byv3-header-group-desktop_a.jpg') no-repeat
+            url('../images/byv3-header-group-desktop_a.jpg') no-repeat
             center;
         background-size: auto 400px;
         height: 400px;
