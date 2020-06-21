@@ -1,3 +1,8 @@
+// -------------------------------------------------- import fonts //
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@800&family=Caveat:wght@700&family=Montserrat:wght@500&family=Raleway:wght@700&family=Muli&display=swap');
+
+
 // --------------------------------------------------------- setup //
 
 body {
@@ -6,11 +11,11 @@ body {
 }
 
 a {
-    color: #ffffff;
+    color: $white;
 
     &:hover {
         text-decoration: none;
-        color: #ffffff;
+        color: $white;
     }
 }
 
@@ -18,16 +23,6 @@ a {
     margin-top: auto;
     margin-bottom: auto;
 }
-
-// -------------------------------------------------- import fonts //
-
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;800&family=Caveat:wght@700&family=Montserrat:wght@400;700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
-
-// ----------------------------------------------------- variables //
 
 // ------------------------------------------------------- navbar //
 
@@ -65,13 +60,13 @@ a {
             font-family: 'Montserrat', sans-serif;
             font-weight: 500;
             line-height: 22px;
-            color: #5e5e5e;
+            color: $nav-link;
             font-size: 15px;
             margin: 0 0.7rem;
             transition: 0.2s;
 
             &:hover {
-                color: #29a69c;
+                color: $nav-link-hover;
             }
         }
 
@@ -116,14 +111,14 @@ a {
 // ------------------------------------------------- header group //
 
 .header-container {
-    background: #dbd6d0 url('/static/images/byv3-header-group-mobile_a.jpg')
+    background: $header-bg url('/static/images/byv3-header-group-mobile_a.jpg')
         no-repeat;
     background-size: auto 250px;
     height: 250px;
     box-shadow: 0px 3px 6px -1px rgba(140, 140, 140, 1);
 
     @media (min-width: 768px) {
-        background: #dbd6d0
+        background: $header-bg
             url('/static/images/byv3-header-group-desktop_a.jpg') no-repeat
             center;
         background-size: auto 400px;
@@ -132,10 +127,10 @@ a {
 
     h1 {
         font-family: 'Barlow', sans-serif;
+        font-weight: 800;
         font-size: 2.875rem;
         line-height: 2.625rem;
-        font-weight: 700;
-        color: #ffffff;
+        color: $white;
 
         @media (min-width: 768px) {
             font-size: 5rem;
@@ -146,7 +141,7 @@ a {
     h4 {
         font-size: 0.94rem;
         line-height: 1.2rem;
-        color: #676767;
+        color: $header-text;
         margin: 0.5rem 0 1.6rem;
 
         @media (min-width: 768px) {
@@ -154,6 +149,22 @@ a {
             line-height: 2rem;
             margin: 0.5rem 0 2.2rem;
         }
+    }
+
+    .header-button {
+        font-family: 'Barlow', sans-serif;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 1.25rem;
+        letter-spacing: 1px;
+        text-decoration: none;
+        padding: 6px 14px 9px;
+        color: $white;
+        background-color: $header-bg;
+        border-radius: 5px;
+        border: 0;
+        box-shadow: -2px -2px 4px 0 rgba(255, 255, 255, 0.5),
+            2px 2px 4px 0 rgba(0, 0, 0, 0.21);
     }
 }
 
@@ -238,34 +249,19 @@ a {
 }
 
 .slider {
-    position: absolute;
-    right: 10px;
-    bottom: -46px;
-
-    .dot {
-        height: 17px;
-        width: 17px;
-        margin: 0.4rem;
-        background-color: #ededed;
-        border: 1px solid #d8d8d8;
-        border-radius: 50%;
-        display: inline-block;
-
-        &-active {
-            background-color: #ffcb3e;
-            border-color: #ffcb3e;
-        }
-    }
+    @include create-slider-dots-mx(#EDEDED, #D8D8D8, #FFCB3E);
 }
 
 // ---------------------------------------------------- sleep mist //
 
 .sleep-mist-container {
-    background: #e97f9f url('/static/images/byv3_sleep_feature_a_800x.jpg')
+    background: $sleep-mist-bg url('/static/images/byv3_sleep_feature_a_800x.jpg')
         no-repeat;
     background-position: right top;
     background-size: cover;
     height: 450px;
+    margin: -10rem 1rem 0;
+    box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.37);
 
     .sleep-mist-content {
         position: absolute;
@@ -285,7 +281,7 @@ a {
             font-weight: 700;
             font-size: 2rem;
             line-height: 2.2rem;
-            color: #ffffff;
+            color: $white;
             margin: 0.8rem 0 2.2rem;
         }
 
@@ -298,8 +294,8 @@ a {
             text-decoration: none;
             padding: 0.9rem 0.9rem 0.9rem;
 
-            color: #ffffff;
-            background-color: #e97f9f;
+            color: $white;
+            background-color: $sleep-mist-bg;
             border-radius: 5px;
             border: 0;
             box-shadow: -2px -2px 4px 0 rgba(255, 255, 255, 0.5),
@@ -308,17 +304,44 @@ a {
     }
 }
 
-// --------------------------------------------------- no name yet //
+// ------------------------------------------------------ new wave //
 
-.no-name-yet {
+.bg-sq-outer {
+    position: relative;
+    margin-top: -5rem;
+    z-index: -10;
+
+    .bg-sq {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $new-wave-bg;
+
+        @media (min-width: 576px) {
+            width: 40%;
+        }
+    }
+}
+
+.new-wave {
+    padding-bottom: 20rem;
+    padding-top: 7rem;
+
+    @media (min-width: 576px) {
+        padding-top: 3rem;
+    }
+    position: relative;
+
     h1 {
         font-family: 'Barlow', sans-serif;
-        font-size: 2.875rem;
-        line-height: 2.625rem;
-        font-weight: 700;
-        color: #00a2b0;
+        font-size: 1.875rem;
+        line-height: 1.8755rem;
+        font-weight: 800;
+        color: $new-wave-text;
 
-        @media (min-width: 768px) {
+        @media (min-width: 576px) {
             font-size: 3.875rem;
             line-height: 3.875rem;
         }
@@ -326,10 +349,11 @@ a {
 
     p {
         font-family: 'Muli', sans-serif;
-        font-size: .8rem;
+        font-weight: 400;
+        font-size: 0.8rem;
         line-height: 1.1rem;
-        color: #007585;
-        margin-bottom: .5rem;
+        color: $new-wave-text;
+        margin-bottom: 0.5rem;
 
         @media (min-width: 576px) {
             font-family: 'Montserrat', sans-serif;
@@ -340,22 +364,20 @@ a {
     }
 }
 
-.qqq {
-    border-top: 1px solid #00A2B0;
-    padding: 1.25rem 0 0 0;
-    
-}
-
-.www {
-    box-shadow : 0 -1px 0 #00A2B0;
+.top-border {
+    @media (max-width: 576px) {
+        border-top: 1px solid #00a2b0;
+        padding: 1.25rem 0 0 0;
+    }
 }
 
 .as-seen-in {
     margin-left: auto;
+    text-align: right;
 
     h3 {
         font-family: 'Caveat', cursive;
-        color: #00A2B0;
+        color: #00a2b0;
         font-weight: 700;
         font-size: 2.25rem;
         line-height: 2.9rem;
@@ -363,32 +385,6 @@ a {
 
     img {
         height: 38px;
-        margin-bottom: .5rem;
+        margin-bottom: 0.5rem;
     }
-}
-
-// ------------------------------------------------------------cbd //
-
-.cbd-container {
-    background-color: lightcyan;
-    margin-top: 6.5rem;
-    margin-bottom: 13rem;
-    height: 601px;
-}
-
-// ------------------------------------------------------- buttons //
-
-.shop-button {
-    font-family: 'Barlow', sans-serif;
-    font-size: 24px;
-    line-height: 1.25rem;
-    letter-spacing: 1px;
-    text-decoration: none;
-    padding: 6px 14px 9px;
-    color: #ffffff;
-    background-color: #dbd6d0;
-    border-radius: 5px;
-    border: 0;
-    box-shadow: -2px -2px 4px 0 rgba(255, 255, 255, 0.5),
-        2px 2px 4px 0 rgba(0, 0, 0, 0.21);
 }

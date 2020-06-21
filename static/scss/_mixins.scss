@@ -1,4 +1,9 @@
 @mixin product-container-mx($bg-col, $shadow-one, $shadow-two) {
+    /*
+    * bg-col : background color
+    * shadow-one : top left shadow color
+    * shadow-two : bottom right shadow color
+    */
     position: relative;
     width: 270px;
     height: 230px;
@@ -13,6 +18,10 @@
 }
 
 @mixin product-quote-mx($text-color, $offset) {
+    /*
+    * text-color : text color
+    * offset : vertical offset from above element
+    */
     position: absolute;
     left: 34%;
     top: calc(33% + #{$offset});
@@ -30,6 +39,9 @@
 }
 
 @mixin product-button-mx($bg-col) {
+    /*
+    * bg-col : background color
+    */
     position: absolute;
     left: 34%;
     bottom: 23px;
@@ -39,9 +51,8 @@
     line-height: 1.1rem;
     letter-spacing: 1px;
     text-decoration: none;
-    padding: 0.9rem .9rem 0.9rem;
-
-    color: #ffffff;
+    padding: 0.9rem 0.9rem 0.9rem;
+    color: $white;
     background-color: $bg-col;
     border-radius: 5px;
     border: 0;
@@ -55,10 +66,13 @@
         line-height: 1.35rem;
         padding: 0.9rem 1.1rem 0.9rem;
     }
-
 }
 
 @mixin quote-image-mx($width, $height) {
+    /*
+    * width : image width
+    * height : image height
+    */
     position: absolute;
     left: 34%;
     top: 17%;
@@ -70,5 +84,36 @@
 
     @media (min-width: 576px) {
         left: 43%;
+    }
+}
+
+@mixin create-slider-dots-mx(
+    $dot-color,
+    $dot-border,
+    $dot-active
+) {
+    /*
+    * dot-color : dot fill color
+    * dot-border :  dot border color
+    * dot-color-active : active dot fill color
+    * dot-border-active : active dot border color
+    */
+    position: absolute;
+    right: 10px;
+    bottom: -46px;
+
+    .dot {
+        height: 17px;
+        width: 17px;
+        margin: 0.4rem;
+        background-color: $dot-color;
+        border: 1px solid $dot-border;
+        border-radius: 50%;
+        display: inline-block;
+
+        &-active {
+            background-color: $dot-active;
+            border-color: $dot-active;
+        }
     }
 }
