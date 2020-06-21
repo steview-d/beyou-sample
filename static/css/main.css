@@ -4,8 +4,9 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;800&family=Caveat:wght@700&family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;800&family=Caveat:wght@700&family=Montserrat:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -11297,6 +11298,65 @@ a:hover {
   border: 0;
   -webkit-box-shadow: -2px -2px 4px 0 rgba(255, 255, 255, 0.5), 2px 2px 4px 0 rgba(0, 0, 0, 0.21);
           box-shadow: -2px -2px 4px 0 rgba(255, 255, 255, 0.5), 2px 2px 4px 0 rgba(0, 0, 0, 0.21);
+}
+
+.no-name-yet h1 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 2.875rem;
+  line-height: 2.625rem;
+  font-weight: 700;
+  color: #00a2b0;
+}
+
+@media (min-width: 768px) {
+  .no-name-yet h1 {
+    font-size: 3.875rem;
+    line-height: 3.875rem;
+  }
+}
+
+.no-name-yet p {
+  font-family: 'Muli', sans-serif;
+  font-size: .8rem;
+  line-height: 1.1rem;
+  color: #007585;
+  margin-bottom: .5rem;
+}
+
+@media (min-width: 576px) {
+  .no-name-yet p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+.qqq {
+  border-top: 1px solid #00A2B0;
+  padding: 1.25rem 0 0 0;
+}
+
+.www {
+  -webkit-box-shadow: 0 -1px 0 #00A2B0;
+          box-shadow: 0 -1px 0 #00A2B0;
+}
+
+.as-seen-in {
+  margin-left: auto;
+}
+
+.as-seen-in h3 {
+  font-family: 'Caveat', cursive;
+  color: #00A2B0;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.9rem;
+}
+
+.as-seen-in img {
+  height: 38px;
+  margin-bottom: .5rem;
 }
 
 .cbd-container {
