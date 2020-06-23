@@ -15,4 +15,14 @@ $(document).ready(function () {
 
     // initialise flickety carousel
     $('.cbd-carousel-container').flickity(fOptions);
+
+    // adjust item alignment to left or center, based on current width
+    $(window).on('resize', function () {
+        if ($(this).width() > 575) {
+            fOptions.cellAlign = 'center';
+        } else {
+            fOptions.cellAlign = 'left';
+        }
+        $('.cbd-carousel-container').flickity(fOptions);
+    });
 });
