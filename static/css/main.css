@@ -11300,7 +11300,7 @@ a:hover {
 .product-slider-dots {
   position: absolute;
   right: 10px;
-  bottom: -46px;
+  bottom: -60px;
 }
 
 .product-slider-dots .dot {
@@ -11310,9 +11310,9 @@ a:hover {
     * dot-color-active : active dot fill color
     * dot-border-active : active dot border color
     */
-  height: 17px;
-  width: 17px;
-  margin: 0.4rem;
+  height: 12px;
+  width: 12px;
+  margin: 0.15rem;
   background-color: #ededed;
   border: 1px solid #d8d8d8;
   border-radius: 50%;
@@ -11574,7 +11574,7 @@ a:hover {
 .cbd-slider {
   position: absolute;
   right: 2rem;
-  bottom: 7rem;
+  bottom: 8rem;
 }
 
 .cbd-slider .cbd-dot {
@@ -11584,9 +11584,9 @@ a:hover {
     * dot-color-active : active dot fill color
     * dot-border-active : active dot border color
     */
-  height: 17px;
-  width: 17px;
-  margin: 0.4rem;
+  height: 12px;
+  width: 12px;
+  margin: 0.15rem;
   background-color: #FFFFFF;
   border: 1px solid #00A2B0;
   border-radius: 50%;

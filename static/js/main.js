@@ -25,4 +25,15 @@ $(document).ready(function () {
         }
         $('.cbd-carousel-container').flickity(fOptions);
     });
+
+    // cbd product slider
+    const $cbdSlider = $('.cbd-carousel-container');
+    const dotPosArray = [1, 2, 3, 1, 2, 3];
+
+    $cbdSlider.on('change.flickity', function (event, index) {
+        $('.cbd-slider').children().removeClass('cbd-dot-active');
+        $('.cbd-slider')
+            .find("[data-dot-pos='" + dotPosArray[index] + "']")
+            .addClass('cbd-dot-active');
+    });
 });

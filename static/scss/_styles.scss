@@ -249,7 +249,7 @@ a {
 .product-slider-dots {
     position: absolute;
     right: 10px;
-    bottom: -46px;
+    bottom: -60px;
 
     .dot {
         @include create-slider-dots-mx(#ededed, #d8d8d8, #ffcb3e);
@@ -331,8 +331,6 @@ a {
 
 .new-wave {
     padding: 7rem 2rem 20rem;
-    // padding-bottom: 20rem;
-    // padding-top: 7rem;
 
     @media (min-width: 576px) {
         padding-top: 3rem;
@@ -394,7 +392,7 @@ a {
     }
 }
 
-// ----------------------------------------------------------- cbd //
+// -------------------------------------------------- cbd products //
 
 #cbd-carousel {
     position: relative;
@@ -497,7 +495,7 @@ a {
 .cbd-slider {
     position: absolute;
     right: 2rem;
-    bottom: 7rem;
+    bottom: 8rem;
 
     .cbd-dot {
         @include create-slider-dots-mx($white, $new-wave-dark, $new-wave-dark);
