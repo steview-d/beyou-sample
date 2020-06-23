@@ -11313,15 +11313,15 @@ a:hover {
   height: 17px;
   width: 17px;
   margin: 0.4rem;
-  background-color: #EDEDED;
-  border: 1px solid #D8D8D8;
+  background-color: #ededed;
+  border: 1px solid #d8d8d8;
   border-radius: 50%;
   display: inline-block;
 }
 
 .slider .dot-active {
-  background-color: #FFCB3E;
-  border-color: #FFCB3E;
+  background-color: #ffcb3e;
+  border-color: #ffcb3e;
 }
 
 .sleep-mist-container {
@@ -11386,7 +11386,7 @@ a:hover {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 140%;
   background-color: #E0FDFF;
 }
 
@@ -11397,8 +11397,7 @@ a:hover {
 }
 
 .new-wave {
-  padding-bottom: 20rem;
-  padding-top: 7rem;
+  padding: 7rem 2rem 20rem;
   position: relative;
 }
 
@@ -11464,5 +11463,107 @@ a:hover {
 .as-seen-in img {
   height: 38px;
   margin-bottom: 0.5rem;
+}
+
+#cbd-carousel {
+  position: relative;
+}
+
+.cbd-carousel-container {
+  margin-top: -17rem;
+  margin-bottom: 10rem;
+}
+
+.cbd-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  height: calc(vw * 0.51);
+  padding: 20px;
+  margin-right: 20px;
+  background-color: #00A2B0;
+}
+
+@media (min-width: 576px) {
+  .cbd-product {
+    width: 490px;
+    height: 330px;
+  }
+}
+
+.cbd-image {
+  width: 42%;
+}
+
+.cbd-image img {
+  width: 90%;
+  padding: 0.75rem;
+}
+
+.cbd-content {
+  margin: auto 0;
+  width: 52%;
+}
+
+.cbd-content h2 {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 800;
+  font-size: 1.625rem;
+  line-height: 1.625rem;
+  margin-bottom: 0.3rem;
+  color: #FFFFFF;
+}
+
+@media (min-width: 576px) {
+  .cbd-content h2 {
+    font-size: 2.375rem;
+    line-height: 2.375rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.cbd-content p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  margin-bottom: 1rem;
+  color: #FFFFFF;
+}
+
+@media (min-width: 576px) {
+  .cbd-content p {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.cbd-content .cbd-button {
+  display: inline-block;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  line-height: 1rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 8px 15px 12px;
+  margin-bottom: 1rem;
+  color: #FFFFFF;
+  background-color: #00A2B0;
+  border-radius: 5px;
+  border: 0;
+  -webkit-box-shadow: -2px -2px 4px 0 rgba(255, 255, 255, 0.5), 2px 2px 4px 0 rgba(0, 0, 0, 0.21);
+          box-shadow: -2px -2px 4px 0 rgba(255, 255, 255, 0.5), 2px 2px 4px 0 rgba(0, 0, 0, 0.21);
+}
+
+@media (min-width: 576px) {
+  .cbd-content .cbd-button {
+    font-size: 1.375rem;
+    line-height: 1.375rem;
+    margin-bottom: 0;
+    padding: 11px 19px 15px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

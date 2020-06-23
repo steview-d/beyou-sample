@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@800&family=Caveat:wght@700&family=Montserrat:wght@500&family=Raleway:wght@700&family=Muli&display=swap');
 
-
 // --------------------------------------------------------- setup //
 
 body {
@@ -118,9 +117,8 @@ a {
     box-shadow: 0px 3px 6px -1px rgba(140, 140, 140, 1);
 
     @media (min-width: 768px) {
-        background: $header-bg
-            url('../images/byv3-header-group-desktop_a.jpg') no-repeat
-            center;
+        background: $header-bg url('../images/byv3-header-group-desktop_a.jpg')
+            no-repeat center;
         background-size: auto 400px;
         height: 400px;
     }
@@ -249,14 +247,14 @@ a {
 }
 
 .slider {
-    @include create-slider-dots-mx(#EDEDED, #D8D8D8, #FFCB3E);
+    @include create-slider-dots-mx(#ededed, #d8d8d8, #ffcb3e);
 }
 
 // ---------------------------------------------------- sleep mist //
 
 .sleep-mist-container {
-    background: $sleep-mist-bg url('/static/images/byv3_sleep_feature_a_800x.jpg')
-        no-repeat;
+    background: $sleep-mist-bg
+        url('/static/images/byv3_sleep_feature_a_800x.jpg') no-repeat;
     background-position: right top;
     background-size: cover;
     height: 450px;
@@ -316,8 +314,8 @@ a {
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
-        background-color: $new-wave-bg;
+        height: 140%;
+        background-color: $new-wave-light;
 
         @media (min-width: 576px) {
             width: 40%;
@@ -326,8 +324,9 @@ a {
 }
 
 .new-wave {
-    padding-bottom: 20rem;
-    padding-top: 7rem;
+    padding: 7rem 2rem 20rem;
+    // padding-bottom: 20rem;
+    // padding-top: 7rem;
 
     @media (min-width: 576px) {
         padding-top: 3rem;
@@ -339,7 +338,7 @@ a {
         font-size: 1.875rem;
         line-height: 1.8755rem;
         font-weight: 800;
-        color: $new-wave-text;
+        color: $new-wave-dark;
 
         @media (min-width: 576px) {
             font-size: 3.875rem;
@@ -352,7 +351,7 @@ a {
         font-weight: 400;
         font-size: 0.8rem;
         line-height: 1.1rem;
-        color: $new-wave-text;
+        color: $new-wave-dark;
         margin-bottom: 0.5rem;
 
         @media (min-width: 576px) {
@@ -386,5 +385,101 @@ a {
     img {
         height: 38px;
         margin-bottom: 0.5rem;
+    }
+}
+
+// ----------------------------------------------------------- cbd //
+
+#cbd-carousel {
+    position: relative;
+}
+
+.cbd-carousel-container {
+    margin-top: -17rem;
+    margin-bottom: 10rem;
+}
+
+.cbd-product {
+    display: flex;
+    width: 90%;
+    height: calc(vw * 0.51);
+    padding: 20px;
+    margin-right: 20px;
+    background-color: $new-wave-dark;
+
+    @media (min-width: 576px) {
+        width: 490px;
+        height: 330px;
+    }
+}
+
+.cbd-image {
+    width: 42%;
+
+    img {
+        width: 90%;
+        padding: 0.75rem;
+        // margin: auto;
+    }
+}
+
+.cbd-content {
+    margin: auto 0;
+    width: 52%;
+
+    h2 {
+        font-family: 'Barlow', sans-serif;
+        font-weight: 800;
+        font-size: 1.625rem;
+        line-height: 1.625rem;
+        margin-bottom: 0.3rem;
+        color: $white;
+
+        @media (min-width: 576px) {
+            font-size: 2.375rem;
+            line-height: 2.375rem;
+            margin-bottom: 0.75rem;
+        }
+    }
+
+    p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 0.75rem;
+        line-height: 0.75rem;
+        margin-bottom: 1rem;
+        color: $white;
+
+        @media (min-width: 576px) {
+            font-size: 1rem;
+            line-height: 1.375rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .cbd-button {
+        display: inline-block;
+        font-family: 'Barlow', sans-serif;
+        font-weight: 800;
+        font-size: 1rem;
+        line-height: 1rem;
+        letter-spacing: 1px;
+        text-decoration: none;
+        padding: 8px 15px 12px;
+        margin-bottom: 1rem;
+
+        color: $white;
+        background-color: $new-wave-dark;
+        border-radius: 5px;
+        border: 0;
+        box-shadow: -2px -2px 4px 0 rgba(255, 255, 255, 0.5),
+            2px 2px 4px 0 rgba(0, 0, 0, 0.21);
+
+        @media (min-width: 576px) {
+            font-size: 1.375rem;
+            line-height: 1.375rem;
+            margin-bottom: 0;
+            padding: 11px 19px 15px;
+        }
     }
 }
