@@ -20,6 +20,6 @@ Deployed page can be found [here](https://steview-d.github.io/beyou-sample/)
 
 #### Carousel Implementation
 
-Flickety does not support wrapping content corectly when the total width of all available content is smaller than it's container, [and likely never will](https://github.com/metafizzy/flickity/issues/95).
+Flickety does not support wrapping content correctly when the total width of all available content is smaller than it's container, [and likely never will](https://github.com/metafizzy/flickity/issues/95).
 
 To get around this, the 3 products have been doubled up and rather than using Flickety's built in page dots (because it was showing 6 dots for 6 products), I made my own instead.
