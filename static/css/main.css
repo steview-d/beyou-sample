@@ -11325,7 +11325,7 @@ a:hover {
 }
 
 .sleep-mist-container {
-  background: #E97F9F url("/static/images/byv3_sleep_feature_a_800x.jpg") no-repeat;
+  background: #E97F9F url("../images/byv3_sleep_feature_a_800x.jpg") no-repeat;
   background-position: right top;
   background-size: cover;
   height: 450px;
