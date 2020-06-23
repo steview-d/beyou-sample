@@ -87,33 +87,24 @@
     }
 }
 
-@mixin create-slider-dots-mx(
-    $dot-color,
-    $dot-border,
-    $dot-active
-) {
+@mixin create-slider-dots-mx($dot-color, $dot-border, $dot-active) {
     /*
     * dot-color : dot fill color
     * dot-border :  dot border color
     * dot-color-active : active dot fill color
     * dot-border-active : active dot border color
     */
-    position: absolute;
-    right: 10px;
-    bottom: -46px;
 
-    .dot {
-        height: 17px;
-        width: 17px;
-        margin: 0.4rem;
-        background-color: $dot-color;
-        border: 1px solid $dot-border;
-        border-radius: 50%;
-        display: inline-block;
+    height: 17px;
+    width: 17px;
+    margin: 0.4rem;
+    background-color: $dot-color;
+    border: 1px solid $dot-border;
+    border-radius: 50%;
+    display: inline-block;
 
-        &-active {
-            background-color: $dot-active;
-            border-color: $dot-active;
-        }
+    &-active {
+        background-color: $dot-active;
+        border-color: $dot-active;
     }
 }

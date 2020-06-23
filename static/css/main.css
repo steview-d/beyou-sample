@@ -11297,19 +11297,19 @@ a:hover {
   }
 }
 
-.slider {
+.product-slider-dots {
+  position: absolute;
+  right: 10px;
+  bottom: -46px;
+}
+
+.product-slider-dots .dot {
   /*
     * dot-color : dot fill color
     * dot-border :  dot border color
     * dot-color-active : active dot fill color
     * dot-border-active : active dot border color
     */
-  position: absolute;
-  right: 10px;
-  bottom: -46px;
-}
-
-.slider .dot {
   height: 17px;
   width: 17px;
   margin: 0.4rem;
@@ -11319,7 +11319,7 @@ a:hover {
   display: inline-block;
 }
 
-.slider .dot-active {
+.product-slider-dots .dot-active {
   background-color: #ffcb3e;
   border-color: #ffcb3e;
 }
@@ -11565,5 +11565,36 @@ a:hover {
     margin-bottom: 0;
     padding: 11px 19px 15px;
   }
+}
+
+.cbd-slider.container {
+  position: relative;
+}
+
+.cbd-slider {
+  position: absolute;
+  right: 2rem;
+  bottom: 7rem;
+}
+
+.cbd-slider .cbd-dot {
+  /*
+    * dot-color : dot fill color
+    * dot-border :  dot border color
+    * dot-color-active : active dot fill color
+    * dot-border-active : active dot border color
+    */
+  height: 17px;
+  width: 17px;
+  margin: 0.4rem;
+  background-color: #FFFFFF;
+  border: 1px solid #00A2B0;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.cbd-slider .cbd-dot-active {
+  background-color: #00A2B0;
+  border-color: #00A2B0;
 }
 /*# sourceMappingURL=main.css.map */

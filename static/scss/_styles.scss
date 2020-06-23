@@ -246,8 +246,14 @@ a {
     }
 }
 
-.slider {
-    @include create-slider-dots-mx(#ededed, #d8d8d8, #ffcb3e);
+.product-slider-dots {
+    position: absolute;
+    right: 10px;
+    bottom: -46px;
+
+    .dot {
+        @include create-slider-dots-mx(#ededed, #d8d8d8, #ffcb3e);
+    }
 }
 
 // ---------------------------------------------------- sleep mist //
@@ -481,5 +487,19 @@ a {
             margin-bottom: 0;
             padding: 11px 19px 15px;
         }
+    }
+}
+
+.cbd-slider.container {
+    position: relative;
+}
+
+.cbd-slider {
+    position: absolute;
+    right: 2rem;
+    bottom: 7rem;
+
+    .cbd-dot {
+        @include create-slider-dots-mx($white, $new-wave-dark, $new-wave-dark);
     }
 }
